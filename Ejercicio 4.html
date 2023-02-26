@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA Y FORMULARIO</title> 
+</head>
+<body STYle="background-color: coral;">
+    <header>
+        <img src="img/incap.jpeg" width="100" height="100" alt="incap">
+        <h1>LISTAS EN HTML</h1>
+        <h2>MENU NAVEGACION</h2>
+</header>
+<nav>
+<u1>
+    <li type="disc" style="color: red;">Home</li>
+    <li type="square">Productos</li>
+    <li type="circle">Servicioa</li>
+    <li>Contacto</li>
+</u1>
+</nav>
+<section>
+    <!-- Mehod get pasa los datos por la url, atravez de parametros// Method post pasa los datos de forma interna ( no se ven) -->
+    <form action="datos.php" method="post">
+        <!-- Seccion de marco de formularios -->
+        <fieldset>
+        <!-- Seccion de ingreso de nombre -->
+        <label>Nombre completo</label>
+        <input name="email" type="email" placeholder="ingrese su email " required="">
+        <br><br>
+
+<!-- Seccion de email -->
+<label>e-mail</label>
+<input name="contraseña" type="password" placeholder="ingrese su contraseña " required="">
+ <br><br>
+
+<!-- Seccion de contraseña -->
+<label>contraseña</label>
+<input name="contraseña" type="password" placeholder="ingrese su contraseña" required="">
+<br><br>
+
+    <!-- Seccion de hobbies -->
+    <label>Selecciona tus hobbies:
+    </label> 
+    <br>
+        <input name="Cine" type="checkbox">cine<br>
+        <input name="Lectura" type="checkbox">Lectura<br>
+        <input name="Deporte" type="checkbox">Deporte<br>
+    <br>
+    <br>
+    
+    <!-- Estado civil -->
+
+    <label>Estado civil</label>
+        <input name="estcivil" type="radio" value="casado">casado(a)<br>
+        <input name="estcivil" type="radio" value="Soltero">Soltero(a)<br>
+        <input name="estcivil" type="radio" value="Viudo">Viudo(a)<br>
+    <br>
+    <br>
+    
+    <!-- Seleccionar opcion lista -->
+    <label>PROGRAMAS TECNICOS</label>
+    <select name="select">
+        <option>Seleccione programa...</option>
+        <option>Sistemas</option>
+        <option>Diseño grafico</option>
+        <option>Contabilidad</option>
+    </select>
+    <br>
+    <br>
+   <label>tu comentario:</label><br>
+        <textarea name="Mensaje" rows="5" cols="40"></textarea>
+    </fieldset>
+    <br><br>
+    <!-- Seccion de botones formulario submit : enviar datos cancel: borrar datos ingresados -->
+    <button type="submit"></button>
+    <button type="reset"></button>
+    <br>
+    <br>
+    </form>
+</section>
+    <!-- Seccion de pie de pajina -->
+<footer>
+    Derechos reservados &copy;2022&#64;NOMBRE STD
+</footer>
+</body>
+</html>
