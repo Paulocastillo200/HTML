@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA Y FORMULARIO</title>
+    <link rel="stylesheet" href="/css/CONTACTO.css">
+</head>
+<body> 
+    <header>
+        <img src="/img/incap.png" alt=""width="100" height="100">
+        <h1>LISTA Y FORMULARIOS</h1>
+        <H2>MENU NAVEGACCION</H2>
+</header>
+    <NAv>
+    <ul>
+        <ul>
+            <li>Home</li>
+            <li>Productos</li>
+            <li>Tienda on line</li>
+            <li>contacto</li>
+        </ul>
+    </ul>
+    </NAv>
+    <section>
+        <form action="datos.php" method="POST">
+        <fieldset>
+            <!-- Seccion de ingreso nombre -->
+            <label for="">Nombre Completo</label>
+            <input type="" name="Nombre" placeholder="&#9750;">Z
+        </fieldset>
+        <br><br>
+        <!-- Seccion email -->
+        <label>E-mail</label>
+        <input name="email" type="email" placeholder="ingrese su email" required="">
+        <br><br>
+        <!-- Seccion contraseña -->
+        <label>Contraseña</label>
+        <input name="contraseña" type="password" placeholder="ingrse su contraseña"
+        required="">
+        <br><br>
+        <!-- Seccion de hobbies -->
+        <label>Seleccione sus hobbies:
+        </label>
+        <br>
+        <input name="Cine" type="checkbox">Cine<br> 
+        <input name="Lectura" type="checkbox">Lectura<br>
+        <input name="Deportes" type="checkbox">Deportes<br>
+        <br>
+        <br>
+        <!-- Estado civil -->
+        <label>Estado civil</label><BR>
+            <input name="estcivil" type="radio" value="">Casado(a)<br>
+            <input name="estcivil" type="radio" value="">Soltera(a)<br>
+            <input name="estcivil" type="radio" value="Viudo">Viudo(a><br>
+            <br>
+            <BR>
+                <!-- Seleccionar opcion lista -->
+                <label>PROGRAMAS TECNICOS</label>
+                <select name="select">
+                    <option>Seleccione programa...</option>
+                    <option>Sistemas</option>
+                    <option>Diseño grafico</option>
+                    <option>Contabilidad</option>
+                </select> 
+                <br>
+                <br>
+                <label>Tu comentario:</label><br>
+                    <textarea name="Mensaje" rows="5" cols="40"></textarea>
+            </fieldset>
+            <br><br>
+            <!-- Seccion de botones formulario submit : enviar daos cancel: borrar datos ingresados -->
+            <button type="submit"></button>
+            <button type="reset"></button>
+            <br>
+            <br>
+            </form> 
+            </section>
+            <!-- Seccion de pajinas -->
+            <footer>
+                Derechos reservados &copy;2022&#64;Paulo STD
+            </footer>
+</body>    
+</html>
