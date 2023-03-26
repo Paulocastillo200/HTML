@@ -1,0 +1,271 @@
+*{
+    box-sizing: borde-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    max-height: 100%;
+}
+body{
+    font-family: Tahoma;
+    font-size: 18px;
+    background-image:url(/IMG/Sede\ chapinero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* Seccion css  cabezera pc */
+#header{
+    background-color: lightsteelblue;
+    border: 2px solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-area: header; /* se coloca nombre al header para utilizarlo en css grid */
+}
+/* Seccion estilo maquetacion barra nav */
+ul{
+    padding: 0;
+    margin: 0 1px;
+}
+li{
+    display: inline; /* horizontal */
+    list-style: none; /* quitar viñetas*/
+    margin: 0 5px;
+    font: bold 12px verdana;
+}
+ul li a{
+    color: white;
+    text-decoration: none;/* quitar subrayado */
+}
+#menu{
+    grid-area: nav;/* se coloca nombre al nav para utilizarlo en css grid */
+    background-color: blue;
+    border: green;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+.buscarbox input{
+    height: 25px;
+    width: 0px;
+    padding: 0px;
+    border-radius: 40px;
+    border: 0px;
+    padding-right: 50px;
+    transform: 0.8s ease;
+}
+.buscarbox input:hover{
+    width: 150;
+    padding-left: 10px;
+    outline: none;/* quitar bordes*/
+}
+/* Seccion css maquetacion section */
+#main{
+    grid-area:main ;/* se coloca nombre al nav para utilizarlo en css grid */
+    background-color: (255,255,255,0.6);
+    border: 2px solid green;
+    backdrop-filter: blur(5px);/* Efecto  glass*/
+    max-width: 100%;
+    height: auto;        
+}
+figure{
+    display: inline;
+    margin: 45px;
+    padding: 5px;
+}
+/* Seccion scc maquetacion article programas incap */
+.programa{
+    display: inline block;
+    margin: 5px;
+    padding: 5px;
+    width: 45%;
+    height: 200px;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgba(255,255 ,255 ,0.6 );
+    backdrop-filter: blur(5px);
+}
+/* Seccion css maquetacion barra aside lateral derecho */
+#sidebar{
+grid-area: sidebar;/* se coloca nombre al aside  para utilizar en  css grid*/
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-self: center;
+background-color: rgba(255,255 ,255 ,0.6 );
+backdrop-filter: blur(5px);
+}
+iframe{
+    max-width: 100px;
+    height: auto;
+}
+/* Seccion css maqutacion fotter redes sociales */
+#footer{
+    grid-area: footer;/* se coloca nombre al aside  para utilizar en  css grid*/
+    margin-top: 20px;
+    border: 2px solid green;
+    border-radius: 20px;
+    clear: both;
+    background-color: rgba(255,255 ,255 ,06 );
+    backdrop-filter: blur(5px);
+}
+#redes a{
+    padding: 5px;
+    margin: 0px;
+}#redes a hover{
+    transform: scaleX(1.5);
+}
+/* Seccion de css para iconos fontawesome */
+i[class^="fa"]{ /* Busca todos los iconos <i> que comienzen por la palabra fa */
+    color: gray;
+    font-size: 20px;
+}
+i[class^="fa"]{
+    color: gray;
+    font-size: 20px;
+    border: solid transparent;
+    margin: 0px;
+}
+.fa-bars{
+    font-size: 30px limportant;
+    color: black limportant;
+}
+.openmenu{
+    display: nome;
+    cursor: pointer;
+    font-size: 24px;
+}
+/* Seccion css grid para pagina web responsive */
+#agrid-container > *{
+    text-align: center;
+    box-shadow: 1px 1px 7px 8px rgba(0,0,0,0.75);
+}
+/* maquetacion con css grid para vista pc 3 columnas */
+#grid-container{
+    display: grid;
+    grid-gap:10px;
+    grid-template:
+    "header header header"150px
+    "nav nav nav" 50px
+    "main main sidebar" 300px
+    "main main sidebar" 300px
+    "main main sidebar" 250px
+    "footer footer footer" 150 / 1150px 300px 250px;
+}
+/* seccion maqutacion css grid para tables 2 culumnas */
+@media(media-width:1024px){
+    #grid-container{
+        grid-template: 
+        "header header" 170px
+        "nav main" 800px
+        "nav main" 700px
+        "sidebar sidebar" 650px
+        "footer footer" 100opx/ 250px 450px;
+        font-size: 75%;/* Cambio el tamaño de letra*/
+    }
+}
+menu{
+    background-color: blue;
+    border-radius: 22px;
+    display: block;
+    padding: 45px;
+    margin: 40px;
+    height: auto;
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-direction: column;/* Cambia la forma de direccion de fila a col*/
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;/* se define el auto ajuste de ancho dispostivo pasa a sgte. linea*/
+    max-width: 100px;
+}
+.programa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+iframe{
+    max-width: 100%;
+    height: auto;
+    }
+    
+    .buscarbox{
+    display:block;
+    padding: 5px;
+    }
+    }
+    
+    /*----- SECCION VISTA DE CELULAR UNA COLUMNA------*/    
+    @media (max-width:640px){
+    #grid-container{
+    grid-template:
+    "header" 150px
+    "nav" 50px
+    "main" 1120px
+    "sidebar" 800px
+    "footer" 100px /    
+    500px;
+    font-size: 60%;
+    }
+    
+    /* Nota: la barra <nav> se programará con javascript_
+    
+por medio de funciones en boton hamburguesa*/
+    #menu{
+    
+        display: none;/* se oculta contenedor nav opciones*/
+    }
+    /* se define que aparezca el menu hamburguesa en la parte superior*/
+    .openmenu{
+    display: block;
+    position:absolute;
+    top:10px;
+    right:120px;
+    z-index:99;/* se define capa encima del texto de contenido HTML*/
+    cursor: pointer;
+    }
+
+    #main{    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap:
+    max-width: 100%;
+    height: auto;
+    }
+    
+    .programa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid black;
+    }
+    
+    iframe{
+    max-width: 100%;
+    height: auto;
+    }
+
+    .buscarbox{
+    display:none;
+    }
+    }
